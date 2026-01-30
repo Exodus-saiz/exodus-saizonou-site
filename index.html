@@ -1,52 +1,120 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Exodus SAÏZONOU</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cake by Exodus 🎂 – Au cœur de vos anniversaires</title>
+
+    <!-- Google Fonts festives -->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Puddles&family=Luckiest+Guy&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/style.css" />
 </head>
 <body>
-<header>
-  <h1>Exodus SAÏZONOU</h1>
-  <nav>
-    <ul>
-      <li><a href="index.html">Accueil</a></li>
-      <li><a href="about.html">À propos</a></li>
-      <li><a href="gallery.html">Galerie</a></li>
-      <li><a href="bibliography.html">Bibliographie</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-  <div id="datetime"></div>
-</header>
-<main>
-  <section>
-    <h2>Bienvenue dans mon univers</h2>
-    <p>Entre images et vitesse, chaque instant capturé raconte une histoire. Tout est grâce. Gloire à Dieu pour chaque instant capturé.</p>
-    <button onclick="moovPayment()">Faire un don / Acheter une photo</button>
-  </section>
-  <section class="gallery-preview">
-    <h3>Aperçu Galerie</h3>
-    <div class="images">
-      <img src="images/cyclisme1.jpg" alt="Cyclisme 1">
-      <img src="images/nature1.jpg" alt="Nature 1">
-      <img src="images/video1.jpg" alt="Vidéo 1">
-    </div>
-  </section>
-</main>
-<footer>
-  <p>Tout est grâce. Gloire à Dieu pour chaque instant capturé.</p>
-  <p>Réseaux sociaux: 
-    <a href="https://www.facebook.com/share/14Qw51wnEa6/?mibextid=wwXIfr" target="_blank">Facebook</a> | 
-    <a href="https://wa.me/2290155289731" target="_blank">WhatsApp</a> | 
-    <a href="https://www.instagram.com/exodussaizonou" target="_blank">Instagram</a> | 
-    <a href="https://www.tiktok.com/@exodussaizonou10may" target="_blank">TikTok</a> | 
-    <a href="https://x.com/exodussaizonou?s=21" target="_blank">X</a> | 
-    <a href="https://www.threads.net/@exodus_saizonou" target="_blank">Threads</a>
-  </p>
-</footer>
-<script src="script.js"></script>
+
+    <!-- HEADER -->
+    <header>
+        <div class="container header-container">
+            <h1 class="logo">Cake by Exodus 🎂</h1>
+            <nav>
+                <a href="#accueil">Accueil</a>
+                <a href="#gateaux">Nos Gâteaux</a>
+                <a href="#commander">Commander</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section id="accueil" class="hero">
+        <div class="hero-content">
+            <h2>Bienvenue chez Cake by Exodus</h2>
+            <p>Le gâteau parfait pour chaque anniversaire — 🎉 Goûtez l’expérience !</p>
+            <a class="btn primary-btn" href="#commander">Commander maintenant</a>
+        </div>
+    </section>
+
+    <!-- NOS GÂTEAUX -->
+    <section id="gateaux" class="gateaux-section">
+        <h2>Nos Gâteaux 🎂</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="./images/boss-lady.jpg" alt="Gâteau Boss Lady" />
+                <h3>Gâteau Boss Lady</h3>
+                <p>Un gâteau chic, puissant et délicieux pour les reines de la fête.</p>
+            </div>
+            <div class="card">
+                <img src="./images/bad-boy.jpg" alt="Gâteau Bad Boy" />
+                <h3>Gâteau Bad Boy</h3>
+                <p>Style et intensité dans chaque bouchée, pour les bad boys du jour.</p>
+            </div>
+            <div class="card">
+                <img src="./images/funky-afro.jpg" alt="Gâteau Funky Afro" />
+                <h3>Gâteau Funky Afro</h3>
+                <p>Couleurs, rythmes et saveurs pour une fête explosive.</p>
+            </div>
+            <div class="card">
+                <img src="./images/royal-party.jpg" alt="Gâteau Royal Party" />
+                <h3>Gâteau Royal Party</h3>
+                <p>La royauté dans un gâteau — Élégance et douceur réunies.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- COMMENT CA MARCHE -->
+    <section class="etapes-section">
+        <h2>Comment ça marche 🛠️</h2>
+        <div class="etapes">
+            <div class="etape">
+                <h3>1. Choisir</h3>
+                <p>Choisis ton gâteau préféré parmi notre sélection.</p>
+            </div>
+            <div class="etape">
+                <h3>2. Personnaliser</h3>
+                <p>Ajoute le nom, les couleurs et la date de livraison.</p>
+            </div>
+            <div class="etape">
+                <h3>3. Commander</h3>
+                <p>Envoie ta commande — on s’occupe de tout !</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FORMULAIRE DE COMMANDE -->
+    <section id="commander" class="commande-section">
+        <h2>Commander 🎉</h2>
+        <form class="commande-form"
+              action="mailto:ton-email@exemple.com"
+              method="post"
+              enctype="text/plain">
+
+            <input type="text" name="Nom" placeholder="Ton nom complet" required>
+            <input type="email" name="Email" placeholder="Ton email" required>
+            <input type="text" name="Inscription" placeholder="Inscription sur le gâteau" required>
+            <input type="tel" name="Telephone" placeholder="Téléphone" required>
+            <input type="date" name="DateLivraison" required>
+            <input type="text" name="Couleur" placeholder="Couleur du gâteau" required>
+            <input type="text" name="TypeGateau" placeholder="Type de gâteau" required>
+
+            <button class="btn secondary-btn" type="submit">Envoyer commande</button>
+        </form>
+        <p class="info">
+            Après clic, votre messagerie s’ouvrira avec un message prêt à être envoyé 🎂✉️
+        </p>
+    </section>
+
+    <!-- CONTACT / FOOTER -->
+    <footer id="contact">
+        <p>Cake by Exodus — Au cœur de vos anniversaires 🎉</p>
+        <div class="socials">
+            <a href="#"><img src="https://img.icons8.com/color/48/000000/facebook-new.png"/></a>
+            <a href="#"><img src="https://img.icons8.com/color/48/000000/instagram-new.png"/></a>
+            <a href="#"><img src="https://img.icons8.com/color/48/000000/twitter--v1.png"/></a>
+            <a href="#"><img src="https://img.icons8.com/color/48/000000/whatsapp.png"/></a>
+            <a href="#"><img src="https://img.icons8.com/color/48/000000/snapchat.png"/></a>
+        </div>
+        <p class="copyright">© 2026 Cake by Exodus</p>
+    </footer>
+
 </body>
 </html>
